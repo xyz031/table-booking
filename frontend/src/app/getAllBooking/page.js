@@ -12,7 +12,7 @@ export default function BookingsPage() {
   useEffect(() => {
     const fetchBookings = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/get-all-booking");
+        const response = await axios.get("https://table-booking-ybj8.onrender.com/api/get-all-booking");
         if (response.status === 200) {
           setBookings(response.data.bookings);
         } else {

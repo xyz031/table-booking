@@ -9,7 +9,7 @@ export default function Availability() {
 
   const fetchAvailability = async () => {
     try {
-      const response = await axios.post("http://localhost:5000/api/availability", { date });
+      const response = await axios.post("https://table-booking-ybj8.onrender.com/api/availability", { date });
       if (response.status === 200) {
         setAvailableSlots(response.data.availableSlots);
       } else {

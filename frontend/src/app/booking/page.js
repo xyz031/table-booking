@@ -47,7 +47,7 @@ export default function BookingForm() {
       setFormData({ ...formData, date: formattedDate });
 
       try {
-        const response = await axios.post("http://localhost:5000/api/availability", { date: formattedDate });
+        const response = await axios.post("https://table-booking-ybj8.onrender.com/api/availability", { date: formattedDate });
         if (response.status === 200) {
           setAvailableSlots(response.data.availableSlots);
         } else {
@@ -68,7 +68,7 @@ export default function BookingForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();  // Ensure default form behavior
     try {
-      const response = await axios.post("http://localhost:5000/api/create", formData);
+      const response = await axios.post("https://table-booking-ybj8.onrender.com/api/create", formData);
       if (response.status === 200 || response.status === 201) {
         toast.success("Booking successful!");
         localStorage.setItem("bookingId", response.data.booking._id);

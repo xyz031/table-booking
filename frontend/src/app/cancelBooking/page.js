@@ -19,7 +19,7 @@ export default function cancelBooking() {
     setLoading(true);
 
     try {
-      const response = await axios.delete(`http://localhost:5000/api/delete/${bookingId}`);
+      const response = await axios.delete(`https://table-booking-ybj8.onrender.com/api/delete/${bookingId}`);
 
       if (response.status === 200) {
         toast.success("Booking deleted successfully!");
