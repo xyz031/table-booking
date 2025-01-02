@@ -1,3 +1,5 @@
+"use client"; 
+
 import Navbar from "./components/Navbar";
 import "./globals.css";
 import { Toaster } from 'react-hot-toast';  // Import Toaster from react-hot-toast
