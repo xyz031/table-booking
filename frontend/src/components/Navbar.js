@@ -27,12 +27,12 @@ export default function Navbar() {
           <Link href="/availability" className="text-white hover:text-yellow-400 transition duration-300">
             Availability
           </Link>
-          <Link href="/getAllBooking" className="text-white hover:text-yellow-400 transition duration-300">
+          {/* <Link href="/getAllBooking" className="text-white hover:text-yellow-400 transition duration-300">
             All Bookings
           </Link>
           <Link href="/cancelBooking" className="text-white hover:text-yellow-400 transition duration-300">
-            Cancel Bookings
-          </Link>
+            Cancel Bookings */}
+          {/* </Link> */}
         </div>
 
         {/* Mobile Menu Button */}
@@ -77,7 +77,7 @@ export default function Navbar() {
           >
             Availability
           </Link>
-          <Link
+          {/* <Link
             href="/getAllBooking"
             className="text-white hover:text-yellow-400 block text-xl"
             onClick={toggleMobileMenu}
@@ -90,7 +90,7 @@ export default function Navbar() {
             onClick={toggleMobileMenu}
           >
              Cancel Bookings
-          </Link>
+          </Link> */}
         </div>
       )}
     </nav>
